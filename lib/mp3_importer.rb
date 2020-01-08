@@ -17,6 +17,10 @@ def files
   songs
 end 
 
+def import
+    files.each {|name| Song.new_by_filename(name)}
+  end
+
 
 
 end 
